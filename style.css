@@ -1,0 +1,153 @@
+*{box-sizing: border-box;}
+
+  body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background-color: black;
+  }
+
+
+
+.grid {
+  align-items: center;
+  border: 1px solid black; 
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  max-height: 630px;
+  max-width: 630px;
+  flex-grow: 1;
+  background-color:rgb(5, 5, 66);
+}
+
+.grid div {
+  border: 1px;
+  flex-grow: 1;
+  height: 11.1%;
+  width: 11.1%;
+  
+}
+section{
+  display: flex;
+  flex-direction: column;
+
+}
+.time-score {
+  display: flex;
+  flex-direction: column; 
+  padding: 20px;
+  margin: 20px;
+  border: 5px solid black;
+  background-color: black;
+}
+span{
+  padding: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: greenyellow;
+  background-color: black;
+}
+
+button {
+border: 2px solid yellow;
+height: 100px;
+width: 100px;
+font-family:'Times New Roman', Times, serif;
+text-transform: uppercase;
+font-weight: bold;
+color:black;
+background-color:green;
+padding: 10px;
+margin: 20px;
+border-radius: 50%;
+}
+#reset {
+background-color: red;
+}
+
+
+
+
+
+.plastic-bottle{
+  background-image: url('images/bottle3.png');
+  background-size: cover;
+}
+.sea-weed{
+  background-image: url('images/vseaweed.png');
+  background-size: cover;
+}
+.plastic-bag{
+  background-image: url('images/plastic-bag.png');
+  background-size: cover;
+  background-position: center;
+}
+.crab{
+  background-image: url('images/crab.png');
+  background-size: cover;
+}
+div.whale1{
+  background-image: url('images/whaleTop1.png');
+  background-size: cover;
+  background-position: center;
+  border-right:none;
+
+}
+div.whale2{
+  background-image: url('images/WhaleBottom1.png');
+  background-size: cover;
+  background-position: center;
+  border-left: none;
+}
+.soda-can{
+  background-image: url('images/plastic-cup.png');
+  background-size:cover;
+}
+.star-fish{
+  background-image: url('images/star-fish.png');
+  background-size:cover;
+}
+.sea-rock{
+  background-image: url('http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/384d668556ef0fc.png');
+  background-size: cover;
+  background-position: center;
+}
+.pink-bubble{
+  background-image: url('images/heart.png');
+  background-size:cover;
+  background-position: center;
+}
+div.little-turtle {
+  background-image: url('https://lh3.googleusercontent.com/proxy/U4v5P2zkwZVC6Bjl-iHXeqAfI_kBOFiVWil7xLGkb9uzDNsckA1G_LEUVGGCIKwUDto67TbZJAsO85kz_Nu_MAisr5W9lrzt');
+  background-size: cover;
+  background-position: center;
+}
+.skeleton {
+  background-image: url('https://i.pinimg.com/originals/74/ec/06/74ec0622c54c403fa46e6d55289bf672.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.cloud{
+  background-image: url('images/cloud1.png');
+  background-size: cover;
+  background-position: center;
+}
+.rainbow{
+  background-image: url('images/rainbow.png');
+  background-size: cover;
+  background-position: center;
+}
+.rock-barrier{
+background-image: url('http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/3d079d40b6d7ac5.png');
+background-size: cover;
+}
+.jump {
+;
+}
+
+
+
+
