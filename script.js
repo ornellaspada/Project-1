@@ -23,24 +23,10 @@ console.log(splash)
 
 livesDisplay.innerHTML = lives
 scoreDisplay.innerHTML = score
-// To create index
-// for (let index = 0; index < width ** 2; index++) {
-//   // grid.appendChild(div)
-//   // cells[index].innerHTML = index
-// }
+
 // Positioning turtle at the starting point 
 cells[76].classList.add('little-turtle')
-// Add eventListernet to each cell
-// cells.forEach((cell) => {
-//   start.addEventListener('click', () => {
-//     // ! Check if the player 
-//     if (cell.classList.contains('crab')) {
-//       score += 100
-//       cell.classList.remove('crab')
-//       cell.classList.replace('')
-//     }
-//   })
-// })
+
 // Add a click event to my start button
 start.addEventListener('click', () => {
   // ? This stops you from creating multiple set intervals
@@ -89,12 +75,7 @@ start.addEventListener('click', () => {
     checkSodaCanCollision()
     checkShoreCollision()
 
-    // if (cells[turtle].classList.contains('crab')){
-    //   score += 200 
-    //   cells[turtle].classList.remove('little-turtle')
-    //   cells.classList.remove('crab')
-    //   cells.classList.add('pink-bubble')
-    // }
+  
   }
   )
   // Turtle meets crab
@@ -278,35 +259,19 @@ start.addEventListener('click', () => {
         if (turtle === 36) {
           loosingLives()
         }
-        // if (turtle < 27) {
-        //   lives -= 1
-        //   cells[turtle].classList.remove('little-turtle')
-        //   cells[76].classList.add('little-turtle')
-        //   turtle = 76
-        // }
+      
       }
       if (star > 26 && star < (width * (width - 1))) {
         cells[star].classList.remove('star-fish')
         star += 1
         cells[star].classList.add('star-fish')
-        // if (turtle + 1 === star) {
-        //   cells[turtle].classList.remove('little-turtle')
-        //   turtle += 2
-        //   return cells[turtle].classList.add('little-turtle')
-        // }
-        // } else {
-        //   cells[star].classList.add('star-fish')
-        // }
-        // cells[star].classList.add('star-fish')
+        
       }
       if (star > 35) {
         cells[star].classList.remove('star-fish')
         star = 27
         cells[star].classList.add('star-fish')
-        // } else if (index === 1 && star > 35) {
-        //   cells[star].classList.remove('star-fish')
-        //   star = 28
-        //   cells[star].classList.add('star-fish')
+       
       }
 
 
@@ -383,7 +348,7 @@ function resetGame() {
   scoreDisplay.innerHTML = `Your score is ${score}`
 
   intervalId = 0
-  // cells[molePosition].classList.remove('mole')
+  
   clearInterval(intervalId)
   alert(`Game Over your score is ${score}`)
 }
