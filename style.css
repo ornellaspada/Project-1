@@ -1,19 +1,28 @@
 *{box-sizing: border-box;}
 
-  body {
+  .body {
   align-items: center;
   display: flex;
+  justify-content: center;
   height: 100vh;
   justify-content: center;
   background-color: black;
   }
-
-
+  h1{
+    color: greenyellow;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    padding: 20px;
+    margin: 0px;
+    letter-spacing: 5px;
+    font-size: 40px;;
+  }
 
 .grid {
   align-items: center;
   border: 1px solid black; 
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   height: 100%;
   justify-content: center;
@@ -33,6 +42,8 @@
 section{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 .time-score {
@@ -52,6 +63,7 @@ span{
 }
 
 button {
+align-items: center;
 border: 2px solid yellow;
 height: 100px;
 width: 100px;
@@ -144,8 +156,16 @@ div.little-turtle {
 background-image: url('http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/3d079d40b6d7ac5.png');
 background-size: cover;
 }
-.jump {
-;
+.pop-up{
+display: none;
+font-size: 30px;
+color: white;
+transform:translate(0px,-520px);
+padding: 52px;
+background-color: black;
+text-align: center;
+font-family: 'Press Start 2P', cursive;
+color: greenyellow;
 }
 
 

@@ -3,12 +3,14 @@ let lives = 4
 let score = 0
 let turtle = 76
 let intervalId = 0
+const cellsAll = document.querySelector('.grid')
 const cells = document.querySelectorAll('.grid div')
 const start = document.querySelector('#start')
 const reset = document.querySelector('#reset')
 const livesDisplay = document.querySelector('.livesDisplay')
 const scoreDisplay = document.querySelector('.scoreDisplay')
 const splash = document.querySelector('.audio2')
+const popup1 = document.querySelector('.pop-up')
 const width = 9
 const audioPlayer = document.querySelector('#audio')
 let plasticBottlePosition = [63, 65, 67, 69]
@@ -18,11 +20,11 @@ let starFishPosition = [29, 28]
 let crabPosition = [22]
 let whalePosition = [10, 13, 16]
 let seaWeedPosition = [18, 25]
-console.log(splash)
 
 
-livesDisplay.innerHTML = lives
-scoreDisplay.innerHTML = score
+
+livesDisplay.innerHTML = `LIVES:${lives}`
+scoreDisplay.innerHTML = `SCORE:${score}`
 
 // Positioning turtle at the starting point 
 cells[76].classList.add('little-turtle')
@@ -35,6 +37,8 @@ start.addEventListener('click', () => {
   }
   audioPlayer.src = './sound/frogger-music.mp3'
   audioPlayer.play()
+  popup1.style.display = 'none'
+  cellsAll.style.display = 'flex'
 
   // Tutle is moving
   document.addEventListener('keyup', (event) => {
@@ -350,7 +354,9 @@ function resetGame() {
   intervalId = 0
   
   clearInterval(intervalId)
-  alert(`Game Over your score is ${score}`)
+  popup1.style.display = 'block'
+  popup1.innerHTML = `Game Over Your score is ${score}` 
+  // alert(`Game Over your score is ${score}`)
 }
 
 
