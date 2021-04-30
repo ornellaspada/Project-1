@@ -70,7 +70,6 @@ start.addEventListener('click', () => {
       cells[turtle].classList.remove('little-turtle')
       turtle -= width
       cells[turtle].classList.add('little-turtle')
-
     }
     checkCrabCollision()
     checkSeaWeedCollision()
@@ -123,8 +122,6 @@ start.addEventListener('click', () => {
       loosingLives()
       cells[turtle].classList.remove('little-turtle')
       cells[turtle].classList.remove('plastic-bottle')
-
-      // cells[turtle].classList.remove('little-turtle')
       cells[76].classList.add('little-turtle')
       turtle = 76
     }
@@ -233,9 +230,6 @@ start.addEventListener('click', () => {
       cells[bag].classList.remove('plastic-bag')
       bag += 1
       cells[bag].classList.add('plastic-bag')
-      // }
-
-
     }, 1000)
   })
   // Plastic Object to define 
@@ -263,22 +257,17 @@ start.addEventListener('click', () => {
         if (turtle === 36) {
           loosingLives()
         }
-      
       }
       if (star > 26 && star < (width * (width - 1))) {
         cells[star].classList.remove('star-fish')
         star += 1
         cells[star].classList.add('star-fish')
-        
       }
       if (star > 35) {
         cells[star].classList.remove('star-fish')
         star = 27
         cells[star].classList.add('star-fish')
-       
       }
-
-
     }, 2000)
   })
   // Here are the crabs
@@ -329,7 +318,6 @@ start.addEventListener('click', () => {
           cells[turtle].classList.remove('little-turtle')
           cells[76].classList.add('little-turtle')
           turtle = 76
-
         }
       }
       if (whalePosition[index] < 9) {
@@ -356,7 +344,6 @@ function resetGame() {
   clearInterval(intervalId)
   popup1.style.display = 'block'
   popup1.innerHTML = `Game Over Your score is ${score}` 
-  // alert(`Game Over your score is ${score}`)
 }
 
 
