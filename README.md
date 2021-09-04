@@ -281,7 +281,7 @@ function resetGame() {
 ## **Days 3 & 4**
 Days 3 and 4 were reserved for bug fixing (see bugs and challenges section), adding any additional features, styling my game with CSS and animating/creating my game pieces/ add buttons that are original replicas of 80s arcade videogames. The overall style is minimalistic and alligned to the 80s aestetics:
 
-![Game Overall](./screenshots/MeanWhile1.png)
+![Game Overall](./screenshots/Meanwhile1.png)
 ![Buttons](./screenshots/Button1.png)
 
 #### **Points System**
