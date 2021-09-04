@@ -90,7 +90,6 @@ cells[turtle].classList.add('little-turtle')
       turtle -= width
       cells[turtle].classList.add('little-turtle')
     }
-
 ```
 
 #### **Automated Elemenents**
